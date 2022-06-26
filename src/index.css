@@ -1,13 +1,87 @@
-body {
+body,html {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  float: left;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root{
+  width: 100vw;
+  min-height: 100vh;
+}
+.WebContainer{
+  width:100%;
+  min-width:1000px;
+  height:auto;
+}
+.navbar{
+  width: 100vw;
+  top:0;
+  left : 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: rgb(157, 67, 157);
+  color: white;
+}
+.navbar_h1{
+  margin-right: auto;
+  margin-left: 10px;
+}
+.navbar_h4{
+  margin-right: 20px;
+}
+.navbar_image{
+  align-self: center;
+  width: 70px;
+}
+.inputs_main{
+  padding : 36px;
+  display: flex;
+  flex-direction: column;
+}
+.form{
+  display: grid;
+  grid-template:40px 40px/1fr 1fr;
+  gap : 17px;
+
+}
+.form--btn{
+  grid-column: 1/3;
+  background-color: rgb(157, 67, 157);
+  color: white;
+  border: solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor:pointer;
+  border : none;
+}
+.form--box1{
+  text-indent: 5px;
+  border : 1px solid #D4D5D8;
+  border-radius: 5px;
+}
+.form--box2{
+  text-indent: 3px;
+  border : 1px solid #D4D5D8;
+  border-radius: 5px;
+}
+.CreateMeme{
+  margin-top: 50px;
+  align-items: center;
+  margin-left: 35%;
+}
+.memeImage{
+  position: fixed;
+  width : 400px;
 }
